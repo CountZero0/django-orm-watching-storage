@@ -9,8 +9,17 @@ This web application allows you to monitor access to bank storage.You can get in
 Use pip to install dependencies:
 >python -m pip install -r requirements.txt
 
-### To run web service you need to enter in terminal:
->python main.py runserver
+You need to create .env file with such strings:
+>DB_URL=postgres://USER:PASSWORD@HOST:PORT/NAME
+> 
+>SECRET_KEY=Secret key value
+> 
+>DEBUG=Debug mode
+> 
+>ALLOWED_HOSTS=List of allowed hosts
+
+### To run web service you need to type in terminal:
+>python manage.py runserver
 
 ### Then just open your browser and type:
 >127.0.0.1:8000
